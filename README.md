@@ -14,7 +14,7 @@ Place thr-pdf-viewer in any place of html body, and write some controller that p
 ```html
 <body>
     ...
-    <thr-pdf-viewer accessor="pdfViwer"></thr-pdf-viewer>
+    <thr-pdf-viewer accessor="pdfViewer"></thr-pdf-viewer>
     ...
 </body>
 ```
@@ -24,15 +24,15 @@ angular
     .controller('anyControllerName', [
         '$scope',
         function ($scope) {
-            $scope.pdfViwer = {};
+            $scope.pdfViewer = {};
         }
     ]);
 ```
-After that, $scope.pdfViwer.open/close could be call to open/close the pdf viewer, e.g:
+After that, $scope.pdfViewer.open/close could be call to open/close the pdf viewer, e.g:
 ```html
 <body>
     ...
-    <i ng-click="pdfViwer.open('Amazing pdf!', 'test.pdf')"></i>
+    <i ng-click="pdfViewer.open('Amazing pdf!', 'test.pdf')"></i>
     ...
 </body>
 ```

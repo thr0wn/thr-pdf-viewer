@@ -3,6 +3,6 @@ angular
     .controller('DemoCtrl', [
         '$scope',
         function ($scope) {
-            $scope.pdfViwer = {};
+            $scope.pdfViewer = {};
         }
     ]);
